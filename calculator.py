@@ -28,7 +28,7 @@ def divide(num1, num2):
     
 def file_store(output):
     file = open ("..\..\..\..\sample.txt","w")
-    file.write(str(output))
+    file.write("output" str(output))
     file.close()
  
 print("Please select operation -\n" \
