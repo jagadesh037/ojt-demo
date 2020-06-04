@@ -61,12 +61,15 @@ pipeline {
 		}
 		success {
 			bat 'echo "Build Passed"'
+			mail to: 'jagadesh037@gmail.com', subject: 'Build passed', body: 'Build Passed'
+
 		
 		}
 		
 		failure {
 			bat 'echo "Build Failed"'
 			bat 'echo "Please fix!"'
+			mail to: 'jagadesh037@gmail.com', subject: 'Build failed', body: 'Build failed'
 		}
 				
 	}
